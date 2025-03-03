@@ -100,5 +100,25 @@ footer nav ul {
 footer nav ul li {
    margin: 0 10px;
 }
-   
+   /* Remove default list styling and set basic layout */
+nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+nav ul li {
+ display: inline-block;
+ margin-right: 20px;
+}
+{
+/* Default link style */
+nav ul li a {
+ text-decoration: none; /* no underline by default */
+ color: black;          /* default color (change as you like) */
+}
+/* Active link style */
+nav ul li a.active {
+ color: blue;                 /* make it blue */
+ text-decoration: underline;  /* underline when on that page */
+}
 </style>
