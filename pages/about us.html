@@ -143,23 +143,5 @@ nav ul li a.active {
 }           
 </style>
 
-
-    <script>
-        document.getElementById('languageSelect').addEventListener('change', function() {
-            var selectedLang = this.value;
-            var paragraphs = document.querySelectorAll('#content p');
-            
-            // Hide all paragraphs
-            paragraphs.forEach(function(p) {
-                p.style.display = 'none';
-            });
-
-            // Show the selected language paragraph
-            var activeParagraph = document.querySelector('#content p[data-lang="' + selectedLang + '"]');
-            if (activeParagraph) {
-                activeParagraph.style.display = 'block';
-            }
-        });
-    </script>
 </body>
 </html>
