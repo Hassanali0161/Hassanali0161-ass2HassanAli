@@ -236,58 +236,6 @@ nav ul li a.active {
 
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Switcher</title>
-    <style>
-        .language-selector {
-            margin: 20px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
 
-    <div class="language-selector">
-        <select id="languageSelect">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="fr">Français</option>
-            <option value="py">русский</option>
-        </select>
-    </div>
-
-    <div id="content">
-        <p data-lang="en">Hello, welcome to my website!</p>
-        <p data-lang="es">¡Hola, bienvenido a mi sitio web!</p>
-        <p data-lang="fr">Bonjour, bienvenue sur mon site Web!</p>
-        <p data-lang="py">добро пожаловать на мой сайт!</p>
-    </div>
-
-    <script>
-        document.getElementById('languageSelect').addEventListener('change', function() {
-            var selectedLang = this.value;
-            var paragraphs = document.querySelectorAll('#content p');
-            
-            // Hide all paragraphs
-            paragraphs.forEach(function(p) {
-                p.style.display = 'none';
-            });
-
-            // Show the selected language paragraph
-            var activeParagraph = document.querySelector('#content p[data-lang="' + selectedLang + '"]');
-            if (activeParagraph) {
-                activeParagraph.style.display = 'block';
-            }
-        });
-    </script>
-</body>
-</html>
 
 
